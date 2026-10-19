@@ -16,18 +16,18 @@
     "test": "vitest run --config vitest.config.js"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
     "express": "^4.22.3",
     "express-rate-limit": "^8.7.0",
     "helmet": "^8.3.0",
     "pg": "^8.23.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
+    "vite": "^8.3.4",
     "zod": "^3.25.76"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^6.1.2",
     "supertest": "^7.3.1",
-    "vite": "^8.3.4",
     "vitest": "^5.0.3"
   }
 }
