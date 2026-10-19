@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 72" role="img" aria-label="Yazıcı Güvenlik Sistemleri">
+  <g transform="translate(4 4)">
+    <path fill="#1D2B36" fill-rule="evenodd"
+      d="M17 3 H47 L59 15 V57 Q59 61 55 61 H9 Q5 61 5 57 V15 Z
+         M32 9.5 a3.6 3.6 0 1 0 0.01 0 Z"/>
+    <path d="M20 35 L28 43 L46 22 M28 43 V54" fill="none" stroke="#F2C230" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="80" y="42" font-family="Archivo, 'Segoe UI', Arial, sans-serif" font-size="36" font-weight="800" fill="#1D2B36" letter-spacing="-0.5">Yazıcı</text>
+  <text x="81" y="62" font-family="Archivo, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="500" fill="#4A5A66">Güvenlik Sistemleri</text>
+</svg>

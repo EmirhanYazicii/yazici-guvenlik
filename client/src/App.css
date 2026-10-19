@@ -1,0 +1,155 @@
+/* Marka renk değişkenleri */
+:root {
+  --navy: #1D2B36;
+  --amber: #F2C230;
+  --grey-mid: #4A5A66;
+  --grey-light: #B8C4CC;
+  --radius: 6px;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: var(--navy);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: #ffffff; }
+
+/* Layout */
+.page { max-width: 720px; margin: 0 auto; padding: 0 1rem; }
+
+/* Header */
+.header {
+  padding: 1.5rem 0;
+  border-bottom: 3px solid var(--amber);
+}
+.logo { height: 48px; }
+
+/* Hero */
+.hero { padding: 2rem 0 1rem; }
+.hero h1 { margin: 0 0 0.5rem; }
+.hero p { color: var(--grey-mid); margin: 0; }
+
+/* Form section */
+.form-section { padding: 1.5rem 0 3rem; }
+.form-section h2 {
+  margin: 0 0 1.5rem;
+  border-left: 4px solid var(--amber);
+  padding-left: 0.75rem;
+}
+
+/* Form fields */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1.25rem;
+}
+
+label { font-weight: 600; font-size: 0.9rem; }
+
+.char-count {
+  float: right;
+  font-weight: 400;
+  color: var(--grey-mid);
+  font-size: 0.8rem;
+}
+
+input,
+select,
+textarea {
+  padding: 0.5rem 0.75rem;
+  border: 1.5px solid var(--grey-light);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-family: inherit;
+  width: 100%;
+  color: var(--navy);
+  background: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--navy);
+  box-shadow: 0 0 0 3px rgba(29, 43, 54, 0.15);
+}
+
+input[aria-invalid='true'],
+select[aria-invalid='true'],
+textarea[aria-invalid='true'] {
+  border-color: #c0392b;
+}
+
+.field-error {
+  color: #c0392b;
+  font-size: 0.85rem;
+}
+
+/* Submit button */
+button[type='submit'] {
+  background: var(--amber);
+  color: var(--navy);
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: var(--radius);
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+button[type='submit']:hover:not(:disabled) {
+  background: #e0b020;
+}
+button[type='submit']:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Genel hata banner'ı */
+.error-banner {
+  background: #fdf0ef;
+  border: 1px solid #e74c3c;
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  color: #c0392b;
+}
+
+/* Başarı mesajı */
+.success-message {
+  background: #f0fdf4;
+  border: 1px solid #22c55e;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+.success-message h3 { margin: 0 0 0.5rem; color: #15803d; }
+.success-message p { margin: 0.25rem 0; }
+.success-message button {
+  background: var(--amber);
+  color: var(--navy);
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.success-message button:hover { background: #e0b020; }
+
+/* Honeypot: ekran dışı, display:none değil — botlar DOM'dan gizlenmiş alanı da algılar */
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* Footer */
+.footer {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--grey-light);
+  color: var(--grey-mid);
+  font-size: 0.85rem;
+}
