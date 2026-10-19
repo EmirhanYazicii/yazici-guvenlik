@@ -187,6 +187,23 @@ Veritabanına ulaşılamazsa `503` ve `"database": "unreachable"` döner.
 
 ---
 
+## Demo / Test
+
+Formu denemek için aşağıdaki bilgileri kullanabilirsiniz:
+
+| Alan | Değer |
+|---|---|
+| Ad Soyad | Test Kullanıcı |
+| E-posta | test@example.com |
+| Hizmet türü | *(istediğinizi seçebilirsiniz)* |
+| Açıklama | Bu bir test talebidir, sistem kontrolü amaçlıdır. |
+
+Başarılı bir gönderiMin ardından ekranda **başvuru numarası** görünür ve kayıt
+veritabanına yazılır. `GET /api/health` endpointi de veritabanı bağlantısını
+doğrulamak için kullanılabilir.
+
+---
+
 ## Bilinen Eksikler
 
 Bu proje 3–4 saatlik bir değerlendirme kapsamında yapılmıştır. Üretime taşımadan
